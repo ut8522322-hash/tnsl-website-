@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | TNSL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tnsl-style.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="tnsl-index.html" class="brand">TNSL</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="tnsl-index.html">Home</a></li>
+        <li class="dropdown">
+          <button class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+            Our Services <span class="caret">▾</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="tnsl-index.html#services">Recruitment</a></li>
+            <li><a href="tnsl-index.html#services">Staffing</a></li>
+            <li><a href="tnsl-index.html#services">Shared Services</a></li>
+            <li><a href="tnsl-index.html#services">MSME HR Centre</a></li>
+          </ul>
+        </li>
+        <li><a href="tnsl-index.html#about">About</a></li>
+        <li><a href="tnsl-index.html#jobs">Find Jobs</a></li>
+        <li><a href="tnsl-index.html#insights">Insights</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="nav-scrim" id="navScrim"></div>
+
+  <main>
+
+    <!-- HERO BANNER -->
+    <section class="contact-hero">
+      <div class="lines-bg" id="linesContainer"></div>
+      <div class="hero-content">
+        <h1>Contact Us</h1>
+        <div class="breadcrumb-pill">
+          <a href="tnsl-index.html">Home</a>
+          <span>›</span>
+          <span>Contact Us</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFO CARDS -->
+    <section class="info-section">
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="info-icon">📞</div>
+          <h3>Phone</h3>
+          <p><a href="tel:+919891577700">+91 98915 77700</a></p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">✉️</div>
+          <h3>Email</h3>
+          <p><a href="mailto:neeraj@tnsl.in">neeraj@tnsl.in</a></p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">📍</div>
+          <h3>Address</h3>
+          <p>410, Vipul Business Park, Sector 48, Gurgaon</p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">🕐</div>
+          <h3>Working Hours</h3>
+          <p>Mon – Sat: 9:00 AM – 6:00 PM</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORM + MAP -->
+    <section class="form-map-section">
+      <div class="form-map-grid">
+        <div class="form-box">
+          <h2>Send Us a Message</h2>
+          <p>Fill out the form and our team will get back to you within 24 hours.</p>
+          <form class="contact-form" onsubmit="handleForm(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" placeholder="Enter your name" required>
+              </div>
+              <div class="form-group">
+                <label>Your Email</label>
+                <input type="email" placeholder="Enter your email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <input type="text" placeholder="How can we help you?" required>
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+            <div class="success-msg" id="successMsg">✅ Message sent! We'll get back to you soon.</div>
+          </form>
+        </div>
+        <div class="map-box">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.0!2d77.0400!3d28.4200!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d18e4b2e4e4e4%3A0x1234!2sVipul%20Business%20Park%2C%20Sector%2048%2C%20Gurugram!5e0!3m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOTIFY BAR -->
+    <section class="notify-bar">
+      <div class="notify-inner">
+        <div>
+          <h2>Get New Job Notifications</h2>
+          <p>Subscribe &amp; get all related jobs notification</p>
+        </div>
+        <form onsubmit="handleSub(event)">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER matching 404 page style -->
+  <footer class="f404-footer">
+    <div class="f404-top">
+
+      <div class="f404-brand-col">
+        <div class="f404-logo">
+          <svg width="46" height="46" viewBox="0 0 46 46" fill="none">
+            <circle cx="23" cy="23" r="23" fill="#0e244d"/>
+            <circle cx="23" cy="14" r="5.5" fill="#ef2d4f"/>
+            <circle cx="14" cy="30" r="5.5" fill="#ef2d4f"/>
+            <circle cx="32" cy="30" r="5.5" fill="#ef2d4f"/>
+            <line x1="23" y1="19.5" x2="14" y2="30" stroke="#ef2d4f" stroke-width="2"/>
+            <line x1="23" y1="19.5" x2="32" y2="30" stroke="#ef2d4f" stroke-width="2"/>
+            <line x1="14" y1="30"   x2="32" y2="30" stroke="#ef2d4f" stroke-width="2"/>
+          </svg>
+          <div>
+            <div class="f404-name">TNSL</div>
+            <div class="f404-sub">talent and skills labs</div>
+          </div>
+        </div>
+        <p>Shaping Futures, Empowering Businesses: Your Partner in Workforce Excellence and HR Innovation</p>
+        <div class="f404-socials">
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Pinterest">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.03-2.83.18-.78 1.17-4.97 1.17-4.97s-.3-.6-.3-1.48c0-1.39.81-2.43 1.81-2.43.85 0 1.27.64 1.27 1.41 0 .86-.55 2.14-.83 3.33-.24 1 .5 1.81 1.48 1.81 1.77 0 3.13-1.87 3.13-4.56 0-2.39-1.72-4.06-4.16-4.06-2.84 0-4.5 2.13-4.5 4.33 0 .86.33 1.78.74 2.28a.3.3 0 0 1 .07.29c-.08.31-.24 1-.28 1.13-.04.18-.14.22-.33.13-1.25-.58-2.03-2.41-2.03-3.87 0-3.15 2.29-6.05 6.61-6.05 3.47 0 6.16 2.47 6.16 5.78 0 3.45-2.17 6.22-5.19 6.22-1.01 0-1.97-.53-2.29-1.15l-.62 2.38c-.23.87-.84 1.96-1.24 2.62.94.29 1.93.45 2.96.45 5.52 0 10-4.48 10-10S17.52 2 12 2z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="f404-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="tnsl-index.html">Home</a></li>
+          <li><a href="tnsl-index.html#about">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="f404-col">
+        <h3>Our Services</h3>
+        <ul>
+          <li><a href="tnsl-index.html#services">Recruitment</a></li>
+          <li><a href="tnsl-index.html#services">Staffing</a></li>
+          <li><a href="tnsl-index.html#services">Shared Services</a></li>
+          <li><a href="tnsl-index.html#services">MSME HR Centre</a></li>
+        </ul>
+      </div>
+
+      <div class="f404-col">
+        <h3>Information</h3>
+        <ul class="f404-info">
+          <li>
+            <span class="f404-icon">📞</span>
+            <div><strong>Phone:</strong><br>+91 98915 77700</div>
+          </li>
+          <li>
+            <span class="f404-icon">✉️</span>
+            <div><strong>Email:</strong><br><a href="mailto:neeraj@tnsl.in">neeraj@tnsl.in</a></div>
+          </li>
+          <li>
+            <span class="f404-icon">📍</span>
+            <div><strong>Address:</strong><br>410, Vipul Business Park Sector 48, Gurgaon</div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="f404-dots" aria-hidden="true">
+        <svg viewBox="0 0 130 130" xmlns="http://www.w3.org/2000/svg">
+          <g fill="rgba(255,255,255,0.1)">
+            <circle cx="10" cy="10" r="4"/><circle cx="30" cy="10" r="4"/><circle cx="50" cy="10" r="4"/><circle cx="70" cy="10" r="4"/><circle cx="90" cy="10" r="4"/><circle cx="110" cy="10" r="4"/>
+            <circle cx="10" cy="30" r="4"/><circle cx="30" cy="30" r="4"/><circle cx="50" cy="30" r="4"/><circle cx="70" cy="30" r="4"/><circle cx="90" cy="30" r="4"/><circle cx="110" cy="30" r="4"/>
+            <circle cx="10" cy="50" r="4"/><circle cx="30" cy="50" r="4"/><circle cx="50" cy="50" r="4"/><circle cx="70" cy="50" r="4"/><circle cx="90" cy="50" r="4"/><circle cx="110" cy="50" r="4"/>
+            <circle cx="10" cy="70" r="4"/><circle cx="30" cy="70" r="4"/><circle cx="50" cy="70" r="4"/><circle cx="70" cy="70" r="4"/><circle cx="90" cy="70" r="4"/><circle cx="110" cy="70" r="4"/>
+            <circle cx="10" cy="90" r="4"/><circle cx="30" cy="90" r="4"/><circle cx="50" cy="90" r="4"/><circle cx="70" cy="90" r="4"/><circle cx="90" cy="90" r="4"/><circle cx="110" cy="90" r="4"/>
+            <circle cx="10" cy="110" r="4"/><circle cx="30" cy="110" r="4"/><circle cx="50" cy="110" r="4"/><circle cx="70" cy="110" r="4"/><circle cx="90" cy="110" r="4"/><circle cx="110" cy="110" r="4"/>
+          </g>
+        </svg>
+      </div>
+
+    </div>
+    <div class="f404-bottom">© 2026 TNSL. All rights reserved.</div>
+  </footer>
+
+  <script src="tnsl-script.js"></script>
+
+</body>
+</html>

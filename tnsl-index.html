@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>TNSL - Talent and Skill Labs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tnsl-style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="brand">TNSL</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+          <button class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+            Our Services <span class="caret">▾</span>
+          </button>
+          <ul class="dropdown-menu">
+           <li><a href="recruitment.html">Recruitment</a></li>
+            <li><a href="Staffing.html">Staffing</a></li>
+            <li><a href="Shared services.html">Shared Services</a></li>
+            <li><a href="MSME HR COE .html">MSME HR Centre</a></li>
+          </ul>
+        </li>
+
+        <li><a href="about.html">About</a></li>
+        <li><a href="Find Job.html">Find Jobs</a></li>
+        <li><a href="index.html#insights">Insights</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="nav-scrim" id="navScrim"></div>
+
+  <main id="home">
+    <section class="hero-slider">
+      <div class="slides" id="track">
+        <article class="slide">
+          <img class="slide-img" src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=2000&q=80" alt="">
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <span class="eyebrow">Premium Talent Solutions</span>
+            <h1>Building future-ready teams with confidence</h1>
+            <p>We connect businesses with the right people through recruitment, staffing, and HR support built for growth.</p>
+          </div>
+        </article>
+
+        <article class="slide">
+          <img class="slide-img" src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=2000&q=80" alt="">
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <span class="eyebrow">Workforce Excellence</span>
+            <h1>Smarter staffing for modern businesses</h1>
+            <p>Scale quickly with dependable workforce solutions designed to support operations, productivity, and stability.</p>
+          </div>
+        </article>
+
+        <article class="slide">
+          <img class="slide-img" src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=2000&q=80" alt="">
+          <div class="slide-overlay"></div>
+          <div class="slide-content">
+            <span class="eyebrow">HR Innovation</span>
+            <h1>Reliable support that helps your business grow</h1>
+            <p>From payroll and compliance to policy support, we make HR operations smoother, faster, and more effective.</p>
+          </div>
+        </article>
+      </div>
+
+      <button class="slider-btn prev" id="prev" aria-label="Previous slide">‹</button>
+      <button class="slider-btn next" id="next" aria-label="Next slide">›</button>
+      <div class="dots" id="dots"></div>
+    </section>
+
+    <section class="intro" id="about">
+      <div class="container narrow center">
+        <h2>Delivering superior results and seamless experiences</h2>
+        <p>Our tailored solutions span recruitment, staffing, shared services, and MSME support. We help organizations build strong teams, optimize HR systems, and grow with confidence.</p>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container grid-4">
+        <a href="recruitment.html" class="service-card">
+  <div class="icon-wrap">◈</div>
+  <h3>Recruitment</h3>
+  <p>Find high-quality talent aligned with your culture, goals, and long-term business strategy.</p>
+</a>
+        <article class="service-card">
+          <div class="icon-wrap">◈</div>
+          <h3>Staffing</h3>
+          <p>Flexible workforce solutions that help you scale smoothly across projects, locations, and seasons.</p>
+        </article>
+        <article class="service-card">
+          <div class="icon-wrap">◈</div>
+          <h3>Shared Services</h3>
+          <p>Streamline payroll, compliance, and HR support so your team can focus on growth.</p>
+        </article>
+        <article class="service-card">
+          <div class="icon-wrap">◈</div>
+          <h3>MSME HR Centre</h3>
+          <p>Practical HR support designed to strengthen smaller businesses and improve operations.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-container">
+        <div class="cta-text">
+          <h2>From talent acquisition to workforce excellence</h2>
+          <p>We bring expertise, consistency, and a refined process that supports both companies and professionals.</p>
+        </div>
+        <div class="cta-grid">
+          <div class="cta-box cta-outline">
+            <h3>Partner With Us</h3>
+            <p>We will manage your workforce needs</p>
+          </div>
+          <div class="cta-box cta-solid">
+            <h3>Explore Opportunities</h3>
+            <p>Begin the journey to your next job today</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="clients" aria-label="Clients">
+      <div class="container narrow center">
+        <h2>Our Clients</h2>
+        <p>Trusted by organizations across industries for dependable support and meaningful outcomes.</p>
+      </div>
+      <div class="logo-marquee">
+        <div class="logo-track">
+          <span>Raymond</span><span>LS Cable</span><span>USHA</span><span>Motherson</span><span>Wissen</span><span>Asian Paints</span>
+          <span>Raymond</span><span>LS Cable</span><span>USHA</span><span>Motherson</span><span>Wissen</span><span>Asian Paints</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat-item"><div class="stat-num">50+</div><div class="stat-label">Clients</div></div>
+        <div class="stat-item"><div class="stat-num">2000+</div><div class="stat-label">Associates</div></div>
+        <div class="stat-item"><div class="stat-num">120+</div><div class="stat-label">Cities with Ops</div></div>
+        <div class="stat-item"><div class="stat-num">25+</div><div class="stat-label">Manufacturing Locations</div></div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container narrow center">
+        <h2>What Our Clients Say</h2>
+        <p>Real feedback from businesses that value dependable service, operational clarity, and measurable results.</p>
+      </div>
+      <div class="container grid-2">
+        <article class="testimonial-card">
+          <div class="quote">“</div>
+          <p>TNSL provided exceptional HR solutions tailored to our needs. Their payroll systems, compliance expertise, and policy design improved our operations significantly.</p>
+          <h4>John Cena</h4>
+          <span>Web Developer</span>
+        </article>
+        <article class="testimonial-card">
+          <div class="quote">“</div>
+          <p>Thanks to TNSL, our MSME now has robust HR policies and efficient payroll systems. Their support helped us work faster and with more confidence.</p>
+          <h4>Maddy</h4>
+          <span>HR Company</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="insights" id="insights">
+      <div class="container narrow center">
+        <h2>Stay ahead with our expert insights</h2>
+        <p>Explore helpful articles, workforce ideas, and professional guidance that support stronger decisions.</p>
+      </div>
+      <div class="container grid-3 blog-grid">
+        <article class="blog-card">
+          <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=80" alt="Interview discussion">
+          <div class="blog-body">
+            <div class="meta">Admin · 17 June, 2026</div>
+            <h3>How to introduce yourself in a job interview</h3>
+            <p>First impressions matter. Learn a simple structure that helps candidates start strong and sound confident.</p>
+          </div>
+        </article>
+        <article class="blog-card">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80" alt="Team working">
+          <div class="blog-body">
+            <div class="meta">Admin · 17 June, 2026</div>
+            <h3>Building a highly motivated team</h3>
+            <p>Discover how the right hiring strategy can turn a small team into a high-performance group.</p>
+          </div>
+        </article>
+        <article class="blog-card">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="Developer working">
+          <div class="blog-body">
+            <div class="meta">Admin · 17 June, 2026</div>
+            <h3>Why software development remains a top career</h3>
+            <p>From flexibility to growth, see why this path continues to attract ambitious professionals.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="newsletter" id="contact">
+      <div class="container newsletter-wrap">
+        <div class="newsletter-copy">
+          <h2>Subscribe to our newsletter</h2>
+          <p>Get monthly insights and company updates delivered straight to your inbox.</p>
+        </div>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" aria-label="Email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+    
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand footer-brand">TNSL</a>
+        <p>Shaping futures, empowering businesses, and delivering workforce excellence with a premium experience.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Our Services</h3>
+        <ul>
+          <li><a href="recruitment.html">Recruitment</a></li>
+          <li><a href="Staffing.html">Staffing</a></li>
+          <li><a href="Shared services.html">Shared Services</a></li>
+          <li><a href="MSME HR COE .html">MSME HR Centre</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Information</h3>
+        <ul class="info-list">
+          <li>Phone: <a href="tel:+919891577700">+91 98915 77700</a></li>
+          <li>Email: <a href="mailto:neeraj@tnsl.in">neeraj@tnsl.in</a></li>
+          <li>Address: 410, Vipul Business Park, Sector 48, Gurgaon</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">© 2026 TNSL. All rights reserved.</div>
+  </footer>
+
+  <script src="tnsl-script.js"></script>
+</body>
+</html>
